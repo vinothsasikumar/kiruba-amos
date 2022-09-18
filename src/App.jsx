@@ -59,23 +59,24 @@ const App = () => {
             </div>
           </div>
         </header>
-        <div className='w-full h-screen z-0 opacity-95'>
-          <div className='text-white h-screen overflow-x-hidden overflow-y-auto'>
-            <section className='h-screen flex flex-col text-white justify-evenly items-center'>
-              <img src={require('./assets/images/icon.png')} className='w-1/2 lg:w-1/6' />
-              <div className="flex w-full lg:w-6/12 items-center p-4">
-                <div className="flex-grow w-4 lg:w-2/12 h-px bg-white"></div>
-                <span className='text-base font-semibold uppercase mx-5 tracking-wide font-poppins'>
-                  The Wedding of
-                </span>
-                <div className="flex-grow w-4 lg:w-2/12 h-px bg-white"></div>
-              </div>
-              <span className='text-6xl lg:text-8xl tracking-wide font-great-vibes'>
-                Kiruba &#38; Amos
+        <div className='w-full h-screen z-0 opacity-95 overflow-x-hidden overflow-y-auto'>
+          <section className='h-screen flex flex-col text-white justify-evenly items-center'>
+            <img src={require('./assets/images/icon.png')} className='w-1/2 lg:w-1/6' />
+            <div className="flex w-full lg:w-6/12 items-center p-4">
+              <div className="flex-grow w-4 lg:w-2/12 h-px bg-white"></div>
+              <span className='text-base font-semibold uppercase mx-5 tracking-wide font-poppins'>
+                The Wedding of
               </span>
-              <Countdown date={Date.now() + timeRemaining} renderer={Renderer} />
-            </section>
-          </div>
+              <div className="flex-grow w-4 lg:w-2/12 h-px bg-white"></div>
+            </div>
+            <span className='text-6xl lg:text-8xl tracking-wide font-great-vibes'>
+              Kiruba &#38; Amos
+            </span>
+            <Countdown date={Date.now() + timeRemaining} renderer={Renderer} />
+          </section>
+          <section className='h-1/6'>
+
+          </section>
         </div>
       </div>
     </>
